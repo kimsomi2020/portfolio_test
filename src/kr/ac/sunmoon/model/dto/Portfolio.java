@@ -20,7 +20,6 @@ public class Portfolio {
 			String endDate, String regDate,int dataCount) {
 		this(title, leader, member, content, startDate, endDate);
 		this.no = no;
-		this.title = title;
 		this.regDate = regDate;
 		this.dataCount = dataCount;
 		
@@ -102,6 +101,12 @@ public class Portfolio {
 	}
 	public void setDataCount(int dataCount) {
 		this.dataCount = dataCount;
+	}
+	@Override
+	public String toString() {
+		return "Portfolio [no=" + no + ", title=" + title + ", leader=" + leader + ", member=" + member + ", content="
+				+ content + ", startDate=" + startDate + ", endDate=" + endDate + ", regDate=" + regDate + ", dataList="
+				+ dataList + ", dataCount=" + dataCount + ", memberCount=" + memberCount + "]";
 	}
 	
 }
